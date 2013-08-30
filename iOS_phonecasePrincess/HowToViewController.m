@@ -20,6 +20,7 @@
     self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
     if (self) {
         // Custom initialization
+        self.view.backgroundColor = [UIColor colorWithPatternImage:[UIImage imageNamed:@"bg.png"]];
     }
     return self;
 }
@@ -32,8 +33,7 @@
 	NSURLRequest *myURLReq = [NSURLRequest requestWithURL:myURL];
     [howtoWebView loadRequest:myURLReq];
     howtoWebView.opaque = NO;
-    howtoWebView.backgroundColor = [UIColor clearColor];
-    
+    howtoWebView.backgroundColor = [UIColor clearColor];    
 }
 
 - (void)didReceiveMemoryWarning
