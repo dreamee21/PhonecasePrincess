@@ -9,5 +9,6 @@
 #import <UIKit/UIKit.h>
 
 @interface NoticeViewController : UIViewController
-
+@property (nonatomic, weak) IBOutlet UIWebView *noticeWebView;
+- (IBAction)backBtn:(id)sender;
 @end

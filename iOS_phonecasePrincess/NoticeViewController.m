@@ -13,6 +13,7 @@
 @end
 
 @implementation NoticeViewController
+@synthesize noticeWebView;
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
@@ -26,13 +27,23 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    // Do any additional setup after loading the view from its nib.
+	// Do any additional setup after loading the view, typically from a nib.
+    NSURL *myURL = [NSURL URLWithString:@"http://210.122.2.49/~phonecasefree/notice/"];
+	NSURLRequest *myURLReq = [NSURLRequest requestWithURL:myURL];
+    [noticeWebView loadRequest:myURLReq];
+    noticeWebView.opaque = NO;
+    noticeWebView.backgroundColor = [UIColor clearColor];
 }
 
 - (void)didReceiveMemoryWarning
 {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
+}
+
+- (IBAction)backBtn:(id)sender
+{
+    [self dismissViewControllerAnimated:YES completion:nil];
 }
 
 @end

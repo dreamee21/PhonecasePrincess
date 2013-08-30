@@ -13,6 +13,8 @@
 @end
 
 @implementation SettingViewController
+@synthesize noticeViewController;
+@synthesize howtoViewController;
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
@@ -20,6 +22,8 @@
     if (self) {
         // Custom initialization
         self.view.backgroundColor = [UIColor colorWithPatternImage:[UIImage imageNamed:@"bg.png"]];
+        self.noticeViewController = [[NoticeViewController alloc] initWithNibName:@"NoticeViewController" bundle:nil];
+        self.howtoViewController = [[HowToViewController alloc] initWithNibName:@"HowToViewController" bundle:nil];
     }
     return self;
 }
@@ -36,4 +40,19 @@
     // Dispose of any resources that can be recreated.
 }
 
+-(IBAction)noticeBtn:(id)sender
+{
+    noticeViewController.modalTransitionStyle = UIModalTransitionStyleCrossDissolve;
+    [self presentViewController:noticeViewController animated:YES completion:nil];
+}
+
+-(IBAction)howtoBtn:(id)sender
+{
+    howtoViewController.modalTransitionStyle = UIModalTransitionStyleCrossDissolve;
+    [self presentViewController:howtoViewController animated:YES completion:nil];
+}
+
+- (IBAction)contactBtn:(id)sender {
+    [[UIApplication sharedApplication] openURL:[NSURL URLWithString:@"mailto://contact@aurumplanet.com"]];
+}
 @end

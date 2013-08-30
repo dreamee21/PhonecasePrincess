@@ -7,7 +7,17 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "NoticeViewController.h"
+#import "HowToViewController.h"
 
 @interface SettingViewController : UIViewController
+{
+    NoticeViewController* noticeViewController;
+}
+@property (strong, nonatomic) NoticeViewController* noticeViewController;
+@property (strong, nonatomic) HowToViewController* howtoViewController;
 
+- (IBAction)noticeBtn:(id)sender;
+- (IBAction)howtoBtn:(id)sender;
+- (IBAction)contactBtn:(id)sender;
 @end

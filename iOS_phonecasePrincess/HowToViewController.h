@@ -9,5 +9,6 @@
 #import <UIKit/UIKit.h>
 
 @interface HowToViewController : UIViewController
-
+@property (nonatomic, weak) IBOutlet UIWebView *howtoWebView;
+- (IBAction)backBtn:(id)sender;
 @end
