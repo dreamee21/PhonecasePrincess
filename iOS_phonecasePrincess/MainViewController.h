@@ -11,7 +11,7 @@
 #import "MyOrderListViewController.h"
 #import "MakeCustomCaseViewController.h"
 #import "SettingViewController.h"
-#import "JoyHubViewController.h"
+//#import "JoyHubViewController.h"
 #import "IPhone5ViewController.h"
 
 @interface MainViewController : UIViewController <UIActionSheetDelegate, UIImagePickerControllerDelegate, UINavigationControllerDelegate>
@@ -27,7 +27,7 @@
     MakeCustomCaseViewController *makeCustomCaseViewController;
     SettingViewController *settingViewController;
     IPhone5ViewController *iPhone5ViewController;
-    JoyHubViewController *joyHubViewController;
+//    JoyHubViewController *joyHubViewController;
     
     UIView *contentView;
 }
@@ -36,7 +36,7 @@
 @property (strong, nonatomic) MyOrderListViewController *myOrderListViewController;
 @property (strong, nonatomic) MakeCustomCaseViewController *makeCustomCaseViewController;
 @property (strong, nonatomic) SettingViewController *settingViewController;
-@property (strong, nonatomic) JoyHubViewController *joyHubViewController;
+//@property (strong, nonatomic) JoyHubViewController *joyHubViewController;
 @property (strong, nonatomic) IPhone5ViewController *iPhone5ViewController;
 
 @property (strong, nonatomic) IBOutlet UIButton *homeButton;

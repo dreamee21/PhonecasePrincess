@@ -18,6 +18,7 @@
 @synthesize orderInfo;
 @synthesize address, data_for_network;
 @synthesize itemList, currentValue;
+@synthesize fromName, fromPhoneNum1, fromPhoneNum2, fromPhoneNum3, toName, toPhoneNum1, toPhoneNum2, toPhoneNum3;
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
@@ -46,6 +47,19 @@
 {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
+}
+
+- (IBAction)onCopyInfoBtn:(id)sender
+{
+    [toName setText:[fromName text]];
+    [toPhoneNum1 setText:[fromPhoneNum1 text]];
+    [toPhoneNum2 setText:[fromPhoneNum2 text]];
+    [toPhoneNum3 setText:[fromPhoneNum3 text]];
+}
+
+- (IBAction)backBtn:(id)sender
+{
+    [self.view removeFromSuperview];
 }
 
 - (IBAction)onAddressBtn:(UITextField *)sender

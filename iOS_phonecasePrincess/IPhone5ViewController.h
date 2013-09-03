@@ -32,7 +32,6 @@
 @property (strong, nonatomic) IBOutlet UIImageView *tappedImageView;
 
 @property (strong, nonatomic) ConfirmBuyingViewController *confirmBuyingViewController;
-@property (strong, nonatomic) OrderViewController *orderViewController;
 
 - (IBAction)backBtn:(id)sender;
 - (IBAction)confirmBuying:(id)sender;

@@ -708,7 +708,7 @@
 		4783C70E174F4007000A3B49 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				CODE_SIGN_IDENTITY = "iPhone Developer: Chris Kim (2D2R8Z7FC3)";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "iOS_phonecasePrincess/iOS_phonecasePrincess-Prefix.pch";
 				INFOPLIST_FILE = "iOS_phonecasePrincess/iOS_phonecasePrincess-Info.plist";
@@ -719,7 +719,7 @@
 					"\"$(SRCROOT)/iOS_phonecasePrincess\"",
 				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "23682779-17DF-4964-BDAB-5BBE35A4CB1C";
+				PROVISIONING_PROFILE = "";
 				TARGETED_DEVICE_FAMILY = 1;
 				WRAPPER_EXTENSION = app;
 			};
@@ -728,7 +728,7 @@
 		4783C70F174F4007000A3B49 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				CODE_SIGN_IDENTITY = "iPhone Developer: Chris Kim (2D2R8Z7FC3)";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "iOS_phonecasePrincess/iOS_phonecasePrincess-Prefix.pch";
 				INFOPLIST_FILE = "iOS_phonecasePrincess/iOS_phonecasePrincess-Info.plist";
@@ -739,7 +739,7 @@
 					"\"$(SRCROOT)/iOS_phonecasePrincess\"",
 				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "23682779-17DF-4964-BDAB-5BBE35A4CB1C";
+				PROVISIONING_PROFILE = "";
 				TARGETED_DEVICE_FAMILY = 1;
 				WRAPPER_EXTENSION = app;
 			};

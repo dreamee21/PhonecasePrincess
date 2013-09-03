@@ -16,7 +16,7 @@
 
 @synthesize tabBarBgView, contentView;
 @synthesize homeButton, myButton, cameraButton, settingButton, discountButton;
-@synthesize gridViewController, myOrderListViewController, makeCustomCaseViewController, settingViewController, joyHubViewController, iPhone5ViewController;
+@synthesize gridViewController, myOrderListViewController, makeCustomCaseViewController, settingViewController, iPhone5ViewController;
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
@@ -28,9 +28,7 @@
         myOrderListViewController = [[MyOrderListViewController alloc] initWithNibName:@"MyOrderListViewController" bundle:nil];
         makeCustomCaseViewController = [[MakeCustomCaseViewController alloc] initWithNibName:@"MakeCustomCaseViewController" bundle:nil];
         settingViewController = [[SettingViewController alloc] initWithNibName:@"SettingViewController" bundle:nil];
-        joyHubViewController = [[JoyHubViewController alloc] initWithNibName:@"JoyHubViewController" bundle:nil];
-        iPhone5ViewController = [[IPhone5ViewController alloc] initWithNibName:@"IPhone5ViewController" bundle:nil];
-        // Custom initialization
+//        joyHubViewController = [[JoyHubViewController alloc] initWithNibName:@"JoyHubViewController" bundle:nil];
     }
     return self;
 }
@@ -109,10 +107,8 @@
     }
     else if([sender isEqual:self.discountButton])
     {
-        joyHubViewController.modalTransitionStyle = UIModalTransitionStyleCrossDissolve;
-//        joyHubViewController.modalTransitionStyle = UIModalTransitionStyleFlipHorizontal;
-//        joyHubViewController.modalTransitionStyle = UIModalTransitionStylePartialCurl;
-        [self presentViewController:joyHubViewController animated:YES completion:nil];
+//        joyHubViewController.modalTransitionStyle = UIModalTransitionStyleCrossDissolve;
+//        [self presentViewController:joyHubViewController animated:YES completion:nil];
     }
 }
 
@@ -120,6 +116,7 @@
 {
     if(buttonIndex == 0) // user selects iPhone5
     {
+        iPhone5ViewController = [[IPhone5ViewController alloc] initWithNibName:@"IPhone5ViewController" bundle:nil];
         iPhone5ViewController.modalTransitionStyle = UIModalTransitionStyleCrossDissolve;
         [self presentViewController:iPhone5ViewController animated:YES completion:nil];
     }

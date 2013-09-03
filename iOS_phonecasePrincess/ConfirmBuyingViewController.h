@@ -7,7 +7,11 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "OrderViewController.h"
 
 @interface ConfirmBuyingViewController : UIViewController
 
+@property (strong, nonatomic) OrderViewController *orderViewController;
+
+- (IBAction)confirmBuying:(id)sender;
 @end

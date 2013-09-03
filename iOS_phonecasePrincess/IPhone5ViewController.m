@@ -15,14 +15,13 @@
 @implementation IPhone5ViewController
 
 @synthesize canvas, subCanvas, photoImageView, tappedImageView;
-@synthesize confirmBuyingViewController, orderViewController;
+@synthesize confirmBuyingViewController;
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
     self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
     if (self) {
         confirmBuyingViewController = [[ConfirmBuyingViewController alloc] initWithNibName:@"ConfirmBuyingViewController" bundle:nil];
-        orderViewController = [[OrderViewController alloc] initWithNibName:@"OrderViewController" bundle:nil];
         photoImageView = [UIImageView alloc];
     }
     return self;
@@ -154,7 +153,8 @@
 
 - (IBAction)confirmBuying:(id)sender
 {
-    [self presentViewController:orderViewController animated:YES completion:nil];
+    [self.view addSubview:confirmBuyingViewController.view];
+//    [self presentViewController:orderViewController animated:YES completion:nil];
 }
 
 /** camera **/

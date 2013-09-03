@@ -30,23 +30,23 @@
 {
     [super viewDidLoad];
     // Do any additional setup after loading the view from its nib.
-    joyhub = [[JoyhubAPI alloc] init];
-    [joyhub InitAPI];
-    
-    self.joyHubWebViewController = [[JoyHubWebViewController alloc] initWithNibName:@"JoyHubWebViewController" bundle:nil];
-    
-    [joyHubWebViewController setMainURL:[joyhub GetMainURL]];
-    [joyHubWebViewController setShopURL:[joyhub GetShopURL]];
-    [joyHubWebViewController setSettingURL:[joyhub GetToSettingURL]];
-    [joyHubWebViewController setFamilyURL:[joyhub GetFamilyURL]];
-    
-    CGRect theFrame = joyHubWebViewController.view.frame;
-    theFrame.origin = CGPointMake(self.view.frame.size.width, 0);
-    joyHubWebViewController.view.frame = theFrame;
-    theFrame.origin = CGPointMake(0,0);
-    [UIView beginAnimations:nil context:nil];
-    [UIView setAnimationDuration:0.8f]; joyHubWebViewController.view.frame = theFrame;
-    [UIView commitAnimations];
+//    joyhub = [[JoyhubAPI alloc] init];
+//    [joyhub InitAPI];
+//    
+//    self.joyHubWebViewController = [[JoyHubWebViewController alloc] initWithNibName:@"JoyHubWebViewController" bundle:nil];
+//    
+//    [joyHubWebViewController setMainURL:[joyhub GetMainURL]];
+//    [joyHubWebViewController setShopURL:[joyhub GetShopURL]];
+//    [joyHubWebViewController setSettingURL:[joyhub GetToSettingURL]];
+//    [joyHubWebViewController setFamilyURL:[joyhub GetFamilyURL]];
+//    
+//    CGRect theFrame = joyHubWebViewController.view.frame;
+//    theFrame.origin = CGPointMake(self.view.frame.size.width, 0);
+//    joyHubWebViewController.view.frame = theFrame;
+//    theFrame.origin = CGPointMake(0,0);
+//    [UIView beginAnimations:nil context:nil];
+//    [UIView setAnimationDuration:0.8f]; joyHubWebViewController.view.frame = theFrame;
+//    [UIView commitAnimations];
 }
 
 - (void)didReceiveMemoryWarning
