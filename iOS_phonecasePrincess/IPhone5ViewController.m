@@ -13,7 +13,7 @@
 @end
 
 @implementation IPhone5ViewController
-
+@synthesize photoImage;
 @synthesize canvas, subCanvas, photoImageView, tappedImageView;
 @synthesize confirmBuyingViewController;
 
@@ -31,7 +31,7 @@
 {
     UIActionSheet *phoneListActionSheet;
     
-    phoneListActionSheet = [[UIActionSheet alloc] initWithTitle:@"사진 가져오기" delegate:self cancelButtonTitle:nil destructiveButtonTitle:nil otherButtonTitles:@"사진첩에서 가져오기", @"새로운 사진 찍기", nil];
+    phoneListActionSheet = [[UIActionSheet alloc] initWithTitle:@"사진 가져오기" delegate:self cancelButtonTitle:nil destructiveButtonTitle:nil otherButtonTitles:@"사진첩에서 가져오기", @"새로운 사진 찍기", @"nil", nil];
     
     [phoneListActionSheet showFromRect:CGRectMake(0, 0, 320, 548) inView:self.view animated:YES];
     
@@ -72,8 +72,6 @@
     tappedImageView.hidden = YES;
     tappedImageView.alpha = 1;
     
-//    UIImage *photoImage = [UIImage imageNamed:@"seed.png"];
-//    photoImageView = [initWithImage:photoImage];
     photoImageView.frame = CGRectMake(0, 60, 200, 200);
     photoImageView.alpha = 1.0;
     
@@ -153,6 +151,7 @@
 
 - (IBAction)confirmBuying:(id)sender
 {
+    confirmBuyingViewController.photoImage = photoImage;
     [self.view addSubview:confirmBuyingViewController.view];
 //    [self presentViewController:orderViewController animated:YES completion:nil];
 }
@@ -201,8 +200,8 @@
 
 - (void)imagePickerController:(UIImagePickerController *)picker didFinishPickingMediaWithInfo:(NSDictionary *)info {
     
-    UIImage *chosenImage = info[UIImagePickerControllerEditedImage];
-    [self.photoImageView initWithImage:chosenImage];
+    photoImage = info[UIImagePickerControllerEditedImage];
+    [self.photoImageView initWithImage:photoImage];
     
     [picker dismissViewControllerAnimated:YES completion:NULL];
     

@@ -14,12 +14,12 @@
 
 @implementation ConfirmBuyingViewController
 @synthesize orderViewController;
+@synthesize photoImage;
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
     self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
     if (self) {
-        orderViewController = [[OrderViewController alloc] initWithNibName:@"OrderViewController" bundle:nil];
     }
     return self;
 }
@@ -53,7 +53,12 @@
 }
 - (IBAction)confirmBuying:(id)sender
 {
-    orderViewController.modalTransitionStyle = UIModalTransitionStyleCrossDissolve;
-    [self presentViewController:orderViewController animated:YES completion:nil];
+    orderViewController = [[OrderViewController alloc] initWithNibName:@"OrderViewController" bundle:nil];
+    orderViewController.photoImage = photoImage;
+    [self.view.superview addSubview:orderViewController.view];
+    [self.view removeFromSuperview];
+    
+//    orderViewController.modalTransitionStyle = UIModalTransitionStyleCrossDissolve;
+//    [self presentViewController:orderViewController animated:YES completion:nil];
 }
 @end

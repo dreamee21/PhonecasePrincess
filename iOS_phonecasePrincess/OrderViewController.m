@@ -14,6 +14,7 @@
 
 @implementation OrderViewController
 
+@synthesize photoImage, photoImageView;
 @synthesize customerInfo;
 @synthesize orderInfo;
 @synthesize address, data_for_network;
@@ -41,8 +42,18 @@
     
     UIScrollView *sc = orderInfo;
     sc.contentSize = ((UIView*)[sc.subviews objectAtIndex:0]).bounds.size;
+    
+    UITapGestureRecognizer *hideKeyBoardRecognizer =
+    [[UITapGestureRecognizer alloc] initWithTarget:self
+                                            action:@selector(hideKeyBoard:)];
+    [self.view addGestureRecognizer:hideKeyBoardRecognizer];
+    [photoImageView initWithImage:photoImage];
 }
 
+- (void)hideKeyBoard:(UITapGestureRecognizer *)recognizer
+{
+    [self.view endEditing:YES];
+}
 - (void)didReceiveMemoryWarning
 {
     [super didReceiveMemoryWarning];
@@ -59,6 +70,7 @@
 
 - (IBAction)backBtn:(id)sender
 {
+//    [self dismissViewControllerAnimated:YES completion:nil];
     [self.view removeFromSuperview];
 }
 
@@ -102,7 +114,7 @@
 
 - (void)connectionDidFinishLoading:(NSURLConnection *)connection
 {
-    NSString *str = [[NSString alloc] initWithData:self.data_for_network encoding:0x80000000 + kCFStringEncodingDOSKorean];
+//    NSString *str = [[NSString alloc] initWithData:self.data_for_network encoding:0x80000000 + kCFStringEncodingDOSKorean];
 //    NSLog(@"%@",str);
     
     NSXMLParser *xmlParser = [[NSXMLParser alloc] initWithData:self.data_for_network];

@@ -830,10 +830,6 @@
 										<string key="NSReuseIdentifierKey">_NS:9</string>
 										<bool key="IBUIUserInteractionEnabled">NO</bool>
 										<string key="targetRuntimeIdentifier">IBCocoaTouchFramework</string>
-										<object class="NSCustomResource" key="IBUIImage">
-											<string key="NSClassName">NSImage</string>
-											<string key="NSResourceName">seed.png</string>
-										</object>
 									</object>
 									<object class="IBUILabel" id="391567287">
 										<reference key="NSNextResponder" ref="159472318"/>
@@ -1087,7 +1083,7 @@
 										<bool key="IBUIAdjustsFontSizeToFit">NO</bool>
 									</object>
 								</array>
-								<string key="NSFrame">{{16, 147}, {288, 1186}}</string>
+								<string key="NSFrame">{{16, 60}, {288, 1186}}</string>
 								<reference key="NSSuperview" ref="947419425"/>
 								<reference key="NSWindow"/>
 								<reference key="NSNextKeyView" ref="691310254"/>
@@ -1190,10 +1186,9 @@
 				<string key="targetRuntimeIdentifier">IBCocoaTouchFramework</string>
 			</object>
 			<object class="IBUIButton" id="5220746">
-				<reference key="NSNextResponder"/>
+				<nil key="NSNextResponder"/>
 				<int key="NSvFlags">292</int>
 				<string key="NSFrameSize">{45, 45}</string>
-				<reference key="NSSuperview"/>
 				<string key="NSReuseIdentifierKey">_NS:9</string>
 				<bool key="IBUIOpaque">NO</bool>
 				<string key="targetRuntimeIdentifier">IBCocoaTouchFramework</string>
@@ -1311,6 +1306,14 @@
 						<reference key="destination" ref="105072367"/>
 					</object>
 					<int key="connectionID">1317</int>
+				</object>
+				<object class="IBConnectionRecord">
+					<object class="IBCocoaTouchOutletConnection" key="connection">
+						<string key="label">photoImageView</string>
+						<reference key="source" ref="372490531"/>
+						<reference key="destination" ref="739334918"/>
+					</object>
+					<int key="connectionID">1319</int>
 				</object>
 				<object class="IBConnectionRecord">
 					<object class="IBCocoaTouchEventConnection" key="connection">
@@ -1738,7 +1741,7 @@
 			<nil key="activeLocalization"/>
 			<dictionary class="NSMutableDictionary" key="localizations"/>
 			<nil key="sourceID"/>
-			<int key="maxID">1318</int>
+			<int key="maxID">1319</int>
 		</object>
 		<object class="IBClassDescriber" key="IBDocument.Classes">
 			<array class="NSMutableArray" key="referencedPartialClassDescriptions">
@@ -1772,6 +1775,7 @@
 						<string key="fromPhoneNum2">UITextField</string>
 						<string key="fromPhoneNum3">UITextField</string>
 						<string key="orderInfo">UIScrollView</string>
+						<string key="photoImageView">UIImageView</string>
 						<string key="toName">UITextField</string>
 						<string key="toPhoneNum1">UITextField</string>
 						<string key="toPhoneNum2">UITextField</string>
@@ -1806,6 +1810,10 @@
 							<string key="name">orderInfo</string>
 							<string key="candidateClassName">UIScrollView</string>
 						</object>
+						<object class="IBToOneOutletInfo" key="photoImageView">
+							<string key="name">photoImageView</string>
+							<string key="candidateClassName">UIImageView</string>
+						</object>
 						<object class="IBToOneOutletInfo" key="toName">
 							<string key="name">toName</string>
 							<string key="candidateClassName">UITextField</string>
@@ -1839,7 +1847,6 @@
 			<string key="480x800_navibar_btn_back_on.png">{68, 68}</string>
 			<string key="480x800_주문조회.png">{800, 114}</string>
 			<string key="bg.png">{480, 660}</string>
-			<string key="seed.png">{827, 1102}</string>
 		</dictionary>
 		<string key="IBCocoaTouchPluginVersion">2083</string>
 	</data>

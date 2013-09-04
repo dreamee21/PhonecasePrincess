@@ -10,8 +10,13 @@
 #import "OrderViewController.h"
 
 @interface ConfirmBuyingViewController : UIViewController
+{
+    UIImage *photoImage;
+}
 
+@property (strong, nonatomic) UIImage *photoImage;
 @property (strong, nonatomic) OrderViewController *orderViewController;
+
 
 - (IBAction)confirmBuying:(id)sender;
 @end

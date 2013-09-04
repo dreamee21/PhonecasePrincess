@@ -24,7 +24,10 @@
     UIView *subCanvas;
     
     CAShapeLayer *_marque;
+    
+    UIImage *photoImage;
 }
+@property (strong, nonatomic) UIImage *photoImage;
 
 @property (strong, nonatomic) IBOutlet UIView *canvas;
 @property (strong, nonatomic) IBOutlet UIView *subCanvas;

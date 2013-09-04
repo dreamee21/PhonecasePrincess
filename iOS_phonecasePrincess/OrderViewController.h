@@ -33,7 +33,13 @@ typedef enum {
     UITextField *toPhoneNum1;
     UITextField *toPhoneNum2;
     UITextField *toPhoneNum3;
+    
+    UIImage *photoImage;
+    UIImageView *photoImageView;
 }
+
+@property (strong, nonatomic) UIImage *photoImage;
+@property (strong, nonatomic) IBOutlet UIImageView *photoImageView;
 
 @property (nonatomic, retain) IBOutlet UIView *customerInfo;
 @property (nonatomic, retain) IBOutlet UIScrollView *orderInfo;
