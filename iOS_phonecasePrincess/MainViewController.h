@@ -9,7 +9,6 @@
 #import <UIKit/UIKit.h>
 #import "GridViewController.h"
 #import "MyOrderListViewController.h"
-#import "MakeCustomCaseViewController.h"
 #import "SettingViewController.h"
 //#import "JoyHubViewController.h"
 #import "IPhone5ViewController.h"
@@ -24,7 +23,6 @@
     
     GridViewController *gridViewController;
     MyOrderListViewController *myOrderListViewController;
-    MakeCustomCaseViewController *makeCustomCaseViewController;
     SettingViewController *settingViewController;
     IPhone5ViewController *iPhone5ViewController;
 //    JoyHubViewController *joyHubViewController;
@@ -34,7 +32,6 @@
 
 @property (strong, nonatomic) GridViewController *gridViewController;
 @property (strong, nonatomic) MyOrderListViewController *myOrderListViewController;
-@property (strong, nonatomic) MakeCustomCaseViewController *makeCustomCaseViewController;
 @property (strong, nonatomic) SettingViewController *settingViewController;
 //@property (strong, nonatomic) JoyHubViewController *joyHubViewController;
 @property (strong, nonatomic) IPhone5ViewController *iPhone5ViewController;

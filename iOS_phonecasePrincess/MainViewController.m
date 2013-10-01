@@ -16,7 +16,7 @@
 
 @synthesize tabBarBgView, contentView;
 @synthesize homeButton, myButton, cameraButton, settingButton, discountButton;
-@synthesize gridViewController, myOrderListViewController, makeCustomCaseViewController, settingViewController, iPhone5ViewController;
+@synthesize gridViewController, myOrderListViewController, settingViewController, iPhone5ViewController;
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
@@ -26,7 +26,6 @@
         
         gridViewController = [[GridViewController alloc] initWithNibName:@"GridViewController" bundle:nil];
         myOrderListViewController = [[MyOrderListViewController alloc] initWithNibName:@"MyOrderListViewController" bundle:nil];
-        makeCustomCaseViewController = [[MakeCustomCaseViewController alloc] initWithNibName:@"MakeCustomCaseViewController" bundle:nil];
         settingViewController = [[SettingViewController alloc] initWithNibName:@"SettingViewController" bundle:nil];
 //        joyHubViewController = [[JoyHubViewController alloc] initWithNibName:@"JoyHubViewController" bundle:nil];
     }
@@ -39,12 +38,10 @@
     
     [self.contentView addSubview:gridViewController.view];
     [self.contentView addSubview:myOrderListViewController.view];
-    [self.contentView addSubview:makeCustomCaseViewController.view];
     [self.contentView addSubview:settingViewController.view];
     
     // default view : grid view
     myOrderListViewController.view.hidden = YES;
-    makeCustomCaseViewController.view.hidden = YES;
     settingViewController.view.hidden = YES;
     
     // Do any additional setup after loading the view from its nib.
@@ -74,7 +71,6 @@
     {
         gridViewController.view.hidden = NO;
         myOrderListViewController.view.hidden = YES;
-        makeCustomCaseViewController.view.hidden = YES;
         settingViewController.view.hidden = YES;
         [self setButtonState:sender];
     }
@@ -82,7 +78,6 @@
     {
         gridViewController.view.hidden = YES;
         myOrderListViewController.view.hidden = NO;
-        makeCustomCaseViewController.view.hidden = YES;
         settingViewController.view.hidden = YES;
         [self setButtonState:sender];
     }
@@ -101,7 +96,6 @@
     {
         gridViewController.view.hidden = YES;
         myOrderListViewController.view.hidden = YES;
-        makeCustomCaseViewController.view.hidden = YES;
         settingViewController.view.hidden = NO;
         [self setButtonState:sender];
     }

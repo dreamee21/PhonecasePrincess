@@ -16,6 +16,7 @@
 
 //@synthesize joyHubWebViewController;
 //@synthesize joyhub;
+@synthesize acntViewController;
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {  
@@ -23,8 +24,9 @@
 
     self.mainViewController = [[MainViewController alloc] initWithNibName:@"MainViewController" bundle:nil];
 
-//    self.window.rootViewController = self.mainViewController;
+    
     self.window.rootViewController = self.mainViewController;
+    
     [self.window makeKeyAndVisible];
     return YES;
 }

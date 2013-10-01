@@ -53,8 +53,6 @@
 		47120230177AA31600A6FBC9 /* MyOrderListViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4712022E177AA31500A6FBC9 /* MyOrderListViewController.xib */; };
 		47120234177AA33500A6FBC9 /* SettingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 47120232177AA33300A6FBC9 /* SettingViewController.m */; };
 		47120235177AA33500A6FBC9 /* SettingViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 47120233177AA33400A6FBC9 /* SettingViewController.xib */; };
-		47120239177AA36E00A6FBC9 /* MakeCustomCaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 47120237177AA36C00A6FBC9 /* MakeCustomCaseViewController.m */; };
-		4712023A177AA36E00A6FBC9 /* MakeCustomCaseViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 47120238177AA36D00A6FBC9 /* MakeCustomCaseViewController.xib */; };
 		47120246177AB7C400A6FBC9 /* 480x800_제품정보_btn_buynow.png in Resources */ = {isa = PBXBuildFile; fileRef = 4712023C177AB7C400A6FBC9 /* 480x800_제품정보_btn_buynow.png */; };
 		47120247177AB7C400A6FBC9 /* 480x800_제품정보_btn_buynow_on.png in Resources */ = {isa = PBXBuildFile; fileRef = 4712023D177AB7C400A6FBC9 /* 480x800_제품정보_btn_buynow_on.png */; };
 		47120248177AB7C400A6FBC9 /* 480x800_제품정보_btn_charge.png in Resources */ = {isa = PBXBuildFile; fileRef = 4712023E177AB7C400A6FBC9 /* 480x800_제품정보_btn_charge.png */; };
@@ -82,6 +80,8 @@
 		4760753D1782C3F100413241 /* joyhub_toapp_bt.png in Resources */ = {isa = PBXBuildFile; fileRef = 476075311782C3F100413241 /* joyhub_toapp_bt.png */; };
 		4760753E1782C3F100413241 /* libJoyhubAPI.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 476075321782C3F100413241 /* libJoyhubAPI.a */; };
 		4760753F1782CAF700413241 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 470C4F1C1757451E0047D9BE /* QuartzCore.framework */; };
+		47650EF817D73D2000209036 /* AcntViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 47650EF617D73D1F00209036 /* AcntViewController.m */; };
+		47650EF917D73D2000209036 /* AcntViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 47650EF717D73D2000209036 /* AcntViewController.xib */; };
 		477A99E317A5227F00D811C9 /* libsqlite3.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 477A99E217A5227F00D811C9 /* libsqlite3.0.dylib */; };
 		477A99E517A53A1E00D811C9 /* libxml2.2.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 477A99E417A53A1E00D811C9 /* libxml2.2.dylib */; };
 		4783C6EE174F4007000A3B49 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4783C6ED174F4007000A3B49 /* UIKit.framework */; };
@@ -161,9 +161,6 @@
 		47120231177AA33200A6FBC9 /* SettingViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SettingViewController.h; sourceTree = "<group>"; };
 		47120232177AA33300A6FBC9 /* SettingViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SettingViewController.m; sourceTree = "<group>"; };
 		47120233177AA33400A6FBC9 /* SettingViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SettingViewController.xib; sourceTree = "<group>"; };
-		47120236177AA36B00A6FBC9 /* MakeCustomCaseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MakeCustomCaseViewController.h; sourceTree = "<group>"; };
-		47120237177AA36C00A6FBC9 /* MakeCustomCaseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MakeCustomCaseViewController.m; sourceTree = "<group>"; };
-		47120238177AA36D00A6FBC9 /* MakeCustomCaseViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MakeCustomCaseViewController.xib; sourceTree = "<group>"; };
 		4712023C177AB7C400A6FBC9 /* 480x800_제품정보_btn_buynow.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "480x800_제품정보_btn_buynow.png"; sourceTree = "<group>"; };
 		4712023D177AB7C400A6FBC9 /* 480x800_제품정보_btn_buynow_on.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "480x800_제품정보_btn_buynow_on.png"; sourceTree = "<group>"; };
 		4712023E177AB7C400A6FBC9 /* 480x800_제품정보_btn_charge.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "480x800_제품정보_btn_charge.png"; sourceTree = "<group>"; };
@@ -202,6 +199,9 @@
 		476075301782C3F100413241 /* joyhub_refresh_bt.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = joyhub_refresh_bt.png; sourceTree = "<group>"; };
 		476075311782C3F100413241 /* joyhub_toapp_bt.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = joyhub_toapp_bt.png; sourceTree = "<group>"; };
 		476075321782C3F100413241 /* libJoyhubAPI.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libJoyhubAPI.a; sourceTree = "<group>"; };
+		47650EF517D73D1F00209036 /* AcntViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AcntViewController.h; sourceTree = "<group>"; };
+		47650EF617D73D1F00209036 /* AcntViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AcntViewController.m; sourceTree = "<group>"; };
+		47650EF717D73D2000209036 /* AcntViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AcntViewController.xib; sourceTree = "<group>"; };
 		477A99E217A5227F00D811C9 /* libsqlite3.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.0.dylib; path = usr/lib/libsqlite3.0.dylib; sourceTree = SDKROOT; };
 		477A99E417A53A1E00D811C9 /* libxml2.2.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libxml2.2.dylib; path = usr/lib/libxml2.2.dylib; sourceTree = SDKROOT; };
 		4783C6EA174F4007000A3B49 /* iOS_phonecasePrincess.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iOS_phonecasePrincess.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -438,15 +438,15 @@
 				83DE171317D061780060164B /* HowToViewController.h */,
 				83DE171417D061790060164B /* HowToViewController.m */,
 				83DE171517D0617A0060164B /* HowToViewController.xib */,
-				47120236177AA36B00A6FBC9 /* MakeCustomCaseViewController.h */,
-				47120237177AA36C00A6FBC9 /* MakeCustomCaseViewController.m */,
-				47120238177AA36D00A6FBC9 /* MakeCustomCaseViewController.xib */,
 				471B1CBA1781856100DF1535 /* IPhone5ViewController.h */,
 				471B1CBB1781856100DF1535 /* IPhone5ViewController.m */,
 				471B1CBC1781856100DF1535 /* IPhone5ViewController.xib */,
 				471B1CBF1781935300DF1535 /* ConfirmBuyingViewController.h */,
 				471B1CC01781935400DF1535 /* ConfirmBuyingViewController.m */,
 				471B1CC11781935500DF1535 /* ConfirmBuyingViewController.xib */,
+				47650EF517D73D1F00209036 /* AcntViewController.h */,
+				47650EF617D73D1F00209036 /* AcntViewController.m */,
+				47650EF717D73D2000209036 /* AcntViewController.xib */,
 			);
 			path = iOS_phonecasePrincess;
 			sourceTree = "<group>";
@@ -572,7 +572,6 @@
 				4712022B177AA0FC00A6FBC9 /* JoyHubViewController.xib in Resources */,
 				47120230177AA31600A6FBC9 /* MyOrderListViewController.xib in Resources */,
 				47120235177AA33500A6FBC9 /* SettingViewController.xib in Resources */,
-				4712023A177AA36E00A6FBC9 /* MakeCustomCaseViewController.xib in Resources */,
 				47120246177AB7C400A6FBC9 /* 480x800_제품정보_btn_buynow.png in Resources */,
 				47120247177AB7C400A6FBC9 /* 480x800_제품정보_btn_buynow_on.png in Resources */,
 				47120248177AB7C400A6FBC9 /* 480x800_제품정보_btn_charge.png in Resources */,
@@ -603,6 +602,7 @@
 				83DE170D17D05BB30060164B /* Default-568h@2x.png in Resources */,
 				83DE171217D05DC30060164B /* NoticeViewController.xib in Resources */,
 				83DE171717D0617C0060164B /* HowToViewController.xib in Resources */,
+				47650EF917D73D2000209036 /* AcntViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -621,12 +621,12 @@
 				4712022A177AA0FC00A6FBC9 /* JoyHubViewController.m in Sources */,
 				4712022F177AA31600A6FBC9 /* MyOrderListViewController.m in Sources */,
 				47120234177AA33500A6FBC9 /* SettingViewController.m in Sources */,
-				47120239177AA36E00A6FBC9 /* MakeCustomCaseViewController.m in Sources */,
 				471B1CBD1781856100DF1535 /* IPhone5ViewController.m in Sources */,
 				471B1CC21781935600DF1535 /* ConfirmBuyingViewController.m in Sources */,
 				831362D817C714CE0091363C /* JSONKit.m in Sources */,
 				83DE171117D05DC30060164B /* NoticeViewController.m in Sources */,
 				83DE171617D0617C0060164B /* HowToViewController.m in Sources */,
+				47650EF817D73D2000209036 /* AcntViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -10,6 +10,7 @@
 //#import "JoyhubAPI.h"
 //#import "JoyHubWebViewController.h"
 #import "JoyHubViewController.h"
+#import "AcntViewController.h"
 
 @class MainViewController;
 
@@ -32,4 +33,5 @@
 
 @property (strong, nonatomic) UINavigationController *navController;
 
+@property (strong, nonatomic) AcntViewController *acntViewController;
 @end

@@ -14,12 +14,16 @@
 
 @implementation OrderViewController
 
+@synthesize mutableArr;
+@synthesize acntViewController;
 @synthesize photoImage, photoImageView;
 @synthesize customerInfo;
 @synthesize orderInfo;
 @synthesize address, data_for_network;
 @synthesize itemList, currentValue;
 @synthesize fromName, fromPhoneNum1, fromPhoneNum2, fromPhoneNum3, toName, toPhoneNum1, toPhoneNum2, toPhoneNum3;
+@synthesize addr, addrNum, addrDetail, email;
+@synthesize productName, cost;
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
@@ -50,10 +54,27 @@
     [photoImageView initWithImage:photoImage];
 }
 
+- (void)postData
+{
+    NSString *phone = [[NSString alloc] initWithString:[fromPhoneNum1 text]];
+    phone = [phone stringByAppendingString:[[NSString alloc] initWithString:[fromPhoneNum2 text]]];
+    phone = [phone stringByAppendingString:[[NSString alloc] initWithString:[fromPhoneNum3 text]]];
+    
+    [mutableArr addObject:[[NSString alloc] initWithString:[productName text]]];
+    [mutableArr addObject:[[NSString alloc] initWithString:[cost text]]];
+    [mutableArr addObject:[[NSString alloc] initWithString:[fromName text]]];
+    [mutableArr addObject:phone];
+    [mutableArr addObject:[[NSString alloc] initWithString:[email text]]];
+    
+    acntViewController.mutableArr = mutableArr;
+    NSLog(@"array: %@", mutableArr);
+}
+
 - (void)hideKeyBoard:(UITapGestureRecognizer *)recognizer
 {
     [self.view endEditing:YES];
 }
+
 - (void)didReceiveMemoryWarning
 {
     [super didReceiveMemoryWarning];
@@ -100,6 +121,14 @@
         UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"입력창확인" message:@"입력창이 비었습니다." delegate:self cancelButtonTitle:@"확인" otherButtonTitles:nil, nil];
         [alert show];
     }    
+}
+
+- (IBAction)payBtn:(id)sender
+{
+    [self postData];
+    
+    acntViewController = [[AcntViewController alloc] initWithNibName:@"AcntViewController" bundle:nil];
+    [self.view addSubview:acntViewController.view];
 }
 
 - (void)connection:(NSURLConnection *)connection didReceiveData:(NSData *)data
